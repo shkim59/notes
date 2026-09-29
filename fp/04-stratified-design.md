@@ -46,14 +46,14 @@ function freeTieClip(cart) {
 
 - 함수가 사용하는 다른 함수와 언어 기능(반복문, 배열 인덱스 참조)을 호출 그래프로 시각화한다.
 
-![호출 그래프](./images/stratified-1.png)
+<!-- ![호출 그래프](./images/stratified-1.png) -->
 
 - 직접 만든 함수와 언어 기능은 추상화 수준이 다르다.
   - 언어 기능: array index, for loop
   - 직접 만든 함수: `make_item()`, `add_item()`
   - 반복문과 배열 인덱스 참조는 더 낮은 추상화 단계다.
 
-![추상화 단계 비교](./images/stratified-2.png)
+<!-- ![추상화 단계 비교](./images/stratified-2.png) -->
 
 - 한 함수에서 서로 다른 추상화 단계를 섞어 쓰면 코드가 명확하지 않아 읽기 어렵다.
 
@@ -78,12 +78,12 @@ function isInCart(cart, name) {
 }
 ```
 
-![개선 후 호출 그래프](./images/stratified-3.png)
+<!-- ![개선 후 호출 그래프](./images/stratified-3.png) -->
 
 - `freeTieClip`에서 언어 기능이 사라짐
 - 비슷한 추상화 단계만 사용
 
-![계층 전체](./images/stratified-4.png)
+<!-- ![계층 전체](./images/stratified-4.png) -->
 
 - 그래프의 위쪽 코드는 수정하기 쉽다.
 - 그래프의 아래쪽 코드는 재사용성이 좋고, 그만큼 테스트가 중요하다.

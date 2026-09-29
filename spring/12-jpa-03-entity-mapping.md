@@ -124,7 +124,7 @@ public class Member {
 
 - `persist` 시 먼저 DB 시퀀스로 식별자를 조회해 엔티티에 할당하고, 영속성 컨텍스트에 저장한다. 실제 INSERT는 커밋(플러시) 시점
 
-![SEQUENCE 전략](./images/jpa03-1.png)
+<!-- ![SEQUENCE 전략](./images/jpa03-1.png) -->
 
 - **allocationSize**
   - 시퀀스를 얻으려면 매번 DB와 통신해야 한다

@@ -7,7 +7,7 @@ title: InnoDB 스토리지 엔진 아키텍처
 - 레코드 기반의 잠금을 제공
   - 높은 동시성 처리가 가능하고 안정적이며 성능이 뛰어나다
 
-![InnoDB 구조](./images/innodb-1.png)
+<!-- ![InnoDB 구조](./images/innodb-1.png) -->
 
 ## 프라이머리 키 클러스터링 인덱스
 
@@ -34,8 +34,8 @@ title: InnoDB 스토리지 엔진 아키텍처
 - 잠금을 사용하지 않는 일관된 읽기를 제공
 - 언두 로그를 이용해 기능을 구현
 
-![MVCC 1](./images/innodb-2.png)
-![MVCC 2](./images/innodb-3.png)
+<!-- ![MVCC 1](./images/innodb-2.png) -->
+<!-- ![MVCC 2](./images/innodb-3.png) -->
 
 - `READ_UNCOMMITTED`: 버퍼 풀의 데이터를 반환
 - `READ_COMMITTED` 이상의 격리 수준 (`REPEATABLE_READ`, `SERIALIZABLE`): 언두 영역의 데이터를 반환

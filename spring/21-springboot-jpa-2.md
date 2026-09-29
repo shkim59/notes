@@ -56,7 +56,7 @@ title: 스프링 부트와 JPA 활용 2 - API 개발과 성능 최적화
 
 ### OSIV OFF
 
-![OSIV OFF](./images/sbjpa2-1.png)
+<!-- ![OSIV OFF](./images/sbjpa2-1.png) -->
 
 - 트랜잭션이 끝나면 영속성 컨텍스트를 닫고 DB 커넥션도 반환 → 커넥션 낭비 없음
 - 대신 **모든 지연 로딩을 트랜잭션 안에서 처리**해야 하고, View Template에서 지연 로딩이 동작하지 않는다

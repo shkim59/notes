@@ -123,7 +123,7 @@ public String requestParamRequired(
 
 MVC 구조 그림에는 메시지 컨버터가 보이지 않는다. 비밀은 `@RequestMapping`을 처리하는 **RequestMappingHandlerAdapter**에 있다.
 
-![RequestMappingHandlerAdapter 동작 방식](./images/request-mapping-handler-adapter.png)
+<!-- ![RequestMappingHandlerAdapter 동작 방식](./images/request-mapping-handler-adapter.png) -->
 
 **ArgumentResolver**
 - `HttpServletRequest`, `Model`, `@RequestParam`, `@ModelAttribute`, `@RequestBody`, `HttpEntity`까지 파라미터를 유연하게 처리할 수 있는 이유.
@@ -137,7 +137,7 @@ MVC 구조 그림에는 메시지 컨버터가 보이지 않는다. 비밀은 `@
 
 **메시지 컨버터의 위치**
 
-![HTTP 메시지 컨버터 위치](./images/http-message-converter-position.png)
+<!-- ![HTTP 메시지 컨버터 위치](./images/http-message-converter-position.png) -->
 
 | | 처리 주체 | 사용하는 것 |
 |---|---|---|

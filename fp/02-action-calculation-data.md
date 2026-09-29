@@ -4,7 +4,7 @@ title: 액션과 계산, 데이터 구분하기
 
 # 액션과 계산, 데이터 구분하기
 
-![액션, 계산, 데이터](./images/acd-1.png)
+<!-- ![액션, 계산, 데이터](./images/acd-1.png) -->
 
 ## 데이터
 
@@ -113,7 +113,7 @@ function sendMail(subscriber, coupon) {
 
 ### 개선 방법
 
-![개선 구조](./images/acd-2.png)
+<!-- ![개선 구조](./images/acd-2.png) -->
 
 1. 1 ~ 4번 과정은 동일
 2. 5번 과정을 계산과 액션으로 나눈다

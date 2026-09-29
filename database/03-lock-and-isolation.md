@@ -47,19 +47,19 @@ title: 잠금과 트랜잭션 격리 수준
 - 데이터 정합성 문제로 사용 X
 - Dirty Read: 다른 트랜잭션이 커밋하지 않은 변경 사항을 읽는 것
 
-![Dirty Read](./images/isolation-1.png)
+<!-- ![Dirty Read](./images/isolation-1.png) -->
 
 ### READ COMMITTED
 
 - 오라클의 기본 격리 수준
 - 언두 로그에 백업된 데이터를 조회
 
-![READ COMMITTED](./images/isolation-2.png)
+<!-- ![READ COMMITTED](./images/isolation-2.png) -->
 
 - NON-REPEATABLE READ 부정합 문제가 발생할 수 있다.
   - 트랜잭션 내에서 쿼리문의 조회 결과가 변경되는 것
 
-![NON-REPEATABLE READ](./images/isolation-3.png)
+<!-- ![NON-REPEATABLE READ](./images/isolation-3.png) -->
 
 ### REPEATABLE READ
 
@@ -67,11 +67,11 @@ title: 잠금과 트랜잭션 격리 수준
 - NON-REPEATABLE READ 문제 해결
 - 언두 로그에서 트랜잭션 아이디가 해당 트랜잭션 아이디보다 작은 데이터 조회
 
-![REPEATABLE READ](./images/isolation-4.png)
+<!-- ![REPEATABLE READ](./images/isolation-4.png) -->
 
 - PHANTOM READ 현상 발생 → 갭 락과 넥스트 키 락으로 방지
 
-![PHANTOM READ](./images/isolation-5.png)
+<!-- ![PHANTOM READ](./images/isolation-5.png) -->
 
 ### SERIALIZABLE
 

@@ -10,7 +10,7 @@ title: JPA 2. 영속성 컨텍스트
 
 ## 엔티티 매니저 팩토리와 엔티티 매니저
 
-![엔티티 매니저 팩토리](./images/jpa02-1.png)
+<!-- ![엔티티 매니저 팩토리](./images/jpa02-1.png) -->
 
 - 애플리케이션이 실행될 때 `EntityManagerFactory`가 생성된다
 - 요청이 올 때마다 `EntityManager`를 생성하고, 커넥션 풀을 사용해 DB에 접근한다
@@ -35,7 +35,7 @@ EntityManager em = emf.createEntityManager();
 
 ## 엔티티 생명주기
 
-![엔티티 생명주기](./images/jpa02-2.png)
+<!-- ![엔티티 생명주기](./images/jpa02-2.png) -->
 
 ```java
 // 1. 비영속 (new/transient): 영속성 컨텍스트와 무관, 객체만 생성된 상태
@@ -98,9 +98,9 @@ transaction.commit(); // 커밋하는 순간 INSERT SQL을 보낸다
 1. `persist` 시 엔티티를 1차 캐시에 넣고, 동시에 INSERT SQL을 만들어 **쓰기 지연 SQL 저장소**에 쌓아둔다
 2. 커밋 시점에 쌓인 SQL을 한꺼번에 DB로 보낸다 (flush)
 
-![쓰기 지연 1](./images/jpa02-3.png)
-![쓰기 지연 2](./images/jpa02-4.png)
-![쓰기 지연 3](./images/jpa02-5.png)
+<!-- ![쓰기 지연 1](./images/jpa02-3.png) -->
+<!-- ![쓰기 지연 2](./images/jpa02-4.png) -->
+<!-- ![쓰기 지연 3](./images/jpa02-5.png) -->
 
 > 💡 버퍼링으로 쿼리를 모아 보낼 수 있어 최적화에 유리하다
 
@@ -117,7 +117,7 @@ memberA.setAge(10);
 transaction.commit();
 ```
 
-![변경 감지](./images/jpa02-6.png)
+<!-- ![변경 감지](./images/jpa02-6.png) -->
 
 1. 1차 캐시에는 엔티티를 처음 읽어온 시점의 **스냅샷**이 저장되어 있다
 2. 커밋 시점에 flush가 실행되면서 엔티티와 스냅샷을 비교

@@ -8,7 +8,7 @@ title: JPA 4. 연관관계 매핑 기초
 
 ### 테이블에 맞춘 모델링
 
-![테이블 중심 모델링](./images/jpa04-1.png)
+<!-- ![테이블 중심 모델링](./images/jpa04-1.png) -->
 
 ```java
 @Entity
@@ -38,7 +38,7 @@ Team findTeam = em.find(Team.class, findMember.getTeamId()); // 연관관계가 
 
 ## 단방향 연관관계
 
-![객체지향 모델링](./images/jpa04-2.png)
+<!-- ![객체지향 모델링](./images/jpa04-2.png) -->
 
 ```java
 @Entity
@@ -59,7 +59,7 @@ public class Member {
 - 회원 여러 명이 한 팀에 속할 수 있다 → Member : Team = N : 1 → `@ManyToOne`
 - DB에서는 **N쪽에 외래 키**가 있다. 외래 키가 있는 쪽에 `@JoinColumn`을 둔다
 
-![ORM 매핑](./images/jpa04-3.png)
+<!-- ![ORM 매핑](./images/jpa04-3.png) -->
 
 ```java
 // 저장
@@ -75,7 +75,7 @@ member.setTeam(teamB);
 
 ## 양방향 연관관계와 연관관계의 주인
 
-![양방향](./images/jpa04-4.png)
+<!-- ![양방향](./images/jpa04-4.png) -->
 
 ```java
 @Entity
@@ -99,12 +99,12 @@ int memberSize = em.find(Team.class, team.getId()).getMembers().size();
 
 ### 객체와 테이블의 양방향은 다르다
 
-![객체 양방향](./images/jpa04-5.png)
+<!-- ![객체 양방향](./images/jpa04-5.png) -->
 
 - **객체**에는 양방향 연관관계가 없다. **단방향 2개**를 애플리케이션 로직으로 묶은 것이다
 - **테이블**은 **외래 키 하나**로 양방향 조인이 가능하다
 
-![테이블 양방향](./images/jpa04-6.png)
+<!-- ![테이블 양방향](./images/jpa04-6.png) -->
 
 ### 연관관계의 주인
 
@@ -114,7 +114,7 @@ int memberSize = em.find(Team.class, team.getId()).getMembers().size();
 - **외래 키가 있는 곳(N쪽)을 주인으로 정한다**
   - `Team.members`를 주인으로 하면, TEAM 엔티티를 바꿨는데 MEMBER 테이블에 UPDATE가 나가는 혼란스러운 구조가 된다
 
-![연관관계 주인](./images/jpa04-7.png)
+<!-- ![연관관계 주인](./images/jpa04-7.png) -->
 
 ### 주의사항
 

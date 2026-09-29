@@ -8,7 +8,7 @@ title: JPA 7-1. 프록시와 지연 로딩
 
 - 엔티티를 조회할 때 연관 엔티티가 항상 쓰이는 것은 아니다
 
-![Member-Team](./images/jpa07-1.png)
+<!-- ![Member-Team](./images/jpa07-1.png) -->
 
 ```java
 // 회원과 팀을 모두 출력 → 팀도 함께 가져오는 게 좋음
@@ -35,7 +35,7 @@ public void printUser(String memberId) {
 
 ### 초기화
 
-![프록시 초기화](./images/jpa07-2.png)
+<!-- ![프록시 초기화](./images/jpa07-2.png) -->
 
 ```java
 Member member = em.getReference(Member.class, "id1"); // MemberProxy 반환
@@ -85,7 +85,7 @@ private Team team;
 - Member를 조회하면 Team은 **프록시**로 초기화된다
 - `member.getTeam().getName()`처럼 실제 값을 사용하는 시점에 조회
 
-![지연 로딩](./images/jpa07-3.png)
+<!-- ![지연 로딩](./images/jpa07-3.png) -->
 
 ### 즉시 로딩 (EAGER)
 
@@ -97,7 +97,7 @@ private Team team;
 
 - Member를 조회할 때 Team까지 조인해서 한 번에 조회. Team은 프록시가 아닌 실제 엔티티
 
-![즉시 로딩](./images/jpa07-4.png)
+<!-- ![즉시 로딩](./images/jpa07-4.png) -->
 
 ### 가급적 지연 로딩을 사용
 

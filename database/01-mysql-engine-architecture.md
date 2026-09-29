@@ -18,7 +18,7 @@ title: MySQL 엔진 아키텍처
 - 성능 향상을 위해 키 캐시(MyISAM)나 버퍼 풀(InnoDB)과 같은 기능을 내장한다.
 - 핸들러 API를 만족하면 누구든지 스토리지 엔진을 구현해서 MySQL 서버에 추가해 사용할 수 있다.
 
-![MySQL 엔진과 스토리지 엔진](./images/mysql-engine-1.png)
+<!-- ![MySQL 엔진과 스토리지 엔진](./images/mysql-engine-1.png) -->
 
 - 핸들러 API: MySQL 엔진의 쿼리 실행기가 스토리지 엔진에 쓰기 또는 읽기 요청(핸들러 요청)을 할 때 사용되는 API
 
@@ -27,7 +27,7 @@ title: MySQL 엔진 아키텍처
 - MySQL은 프로세스 기반이 아닌 스레드 기반으로 작동
 - 포그라운드 스레드와 백그라운드 스레드로 구분
 
-![스레딩 구조](./images/mysql-engine-2.png)
+<!-- ![스레딩 구조](./images/mysql-engine-2.png) -->
 
 - **포그라운드 스레드 (클라이언트 스레드)**
   - MySQL 서버에 접속된 클라이언트의 수만큼 존재 (최소)
@@ -43,7 +43,7 @@ title: MySQL 엔진 아키텍처
 
 ## 메모리 할당 및 구조
 
-![메모리 구조](./images/mysql-engine-3.png)
+<!-- ![메모리 구조](./images/mysql-engine-3.png) -->
 
 - **글로벌 메모리 영역**
   - MySQL 서버가 시작되면서 운영체제로부터 할당
@@ -74,7 +74,7 @@ title: MySQL 엔진 아키텍처
 
 ## 쿼리 실행 구조
 
-![쿼리 실행 구조](./images/mysql-engine-4.png)
+<!-- ![쿼리 실행 구조](./images/mysql-engine-4.png) -->
 
 - **쿼리 파서**
   - 쿼리 문장을 토큰으로 분리해 트리 형태의 구조로 만들어 내는 작업

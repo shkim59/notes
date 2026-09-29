@@ -12,7 +12,7 @@ title: HTML 기초 — 요소, 속성, 문서 구조, 메타데이터
 
 ## 요소(Element)
 
-![요소 구조](./images/html-element.png)
+<!-- ![요소 구조](./images/html-element.png) -->
 
 | 구성 | 설명 |
 |---|---|
@@ -47,7 +47,7 @@ title: HTML 기초 — 요소, 속성, 문서 구조, 메타데이터
 
 ## 속성(Attribute)
 
-![속성 구조](./images/html-attribute.png)
+<!-- ![속성 구조](./images/html-attribute.png) -->
 
 - 요소에 추가 정보를 담는다. 예: 스타일을 위한 `class`.
 - 규칙: 요소 이름·다른 속성과 **공백**으로 구분, 이름 뒤에 `=`, 값은 **따옴표**로 감싼다.

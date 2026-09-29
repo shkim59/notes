@@ -14,8 +14,8 @@ title: 프로세스 동기화
 - 데이터의 최종 연산 결과는 마지막에 그 데이터를 다룬 프로세스에 따라 달라짐
 - 예) 계좌 입출금
 
-![데이터의 접근](./images/sync-1.png)
-![Race Condition](./images/sync-2.png)
+<!-- ![데이터의 접근](./images/sync-1.png) -->
+<!-- ![Race Condition](./images/sync-2.png) -->
 
 - OS에서 race condition이 발생하는 경우
   - 커널 수행 중 인터럽트 발생 시
@@ -139,7 +139,7 @@ function signal(int S) {
   - wait: 프로세스를 대기 상태로 전환하고 대기 큐에 삽입
   - signal: 대기 상태의 프로세스 중 정확히 하나를 깨워 실행 (대기 중인 프로세스가 없으면 아무 일도 일어나지 않음)
 
-![모니터 구조](./images/sync-monitor.png)
+<!-- ![모니터 구조](./images/sync-monitor.png) -->
 
 ## 고전적인 동기화 문제
 

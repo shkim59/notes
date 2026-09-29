@@ -46,7 +46,7 @@ arr1[0] = 100;  // arr2[0]도 100
 
 ## 메모리 구조
 
-![JVM 메모리 구조](./images/java-memory-1.png)
+<!-- ![JVM 메모리 구조](./images/java-memory-1.png) -->
 
 ### Method Area / Metaspace
 
@@ -174,7 +174,7 @@ public void collectionExample() {
 
 ## Static과 Instance
 
-![static과 instance](./images/java-memory-2.png)
+<!-- ![static과 instance](./images/java-memory-2.png) -->
 
 - **static (정적) 멤버**
   - 클래스 로딩 시점에 메모리(Method Area / Metaspace)에 할당되고 초기화되며, 프로그램이 종료될 때까지 메모리에 남아있다

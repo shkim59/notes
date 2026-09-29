@@ -37,7 +37,7 @@ title: 운영체제 개요 및 컴퓨터 시스템 구조
 
 ## 컴퓨터 시스템 하드웨어 구조
 
-![컴퓨터 시스템 구조](./images/os-overview-1.png)
+<!-- ![컴퓨터 시스템 구조](./images/os-overview-1.png) -->
 
 ### CPU
 

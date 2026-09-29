@@ -46,7 +46,7 @@ select m from Member m join fetch m.team
 SELECT M.*, T.* FROM MEMBER M INNER JOIN TEAM T ON M.TEAM_ID = T.ID
 ```
 
-![엔티티 페치 조인](./images/jpa10-1.png)
+<!-- ![엔티티 페치 조인](./images/jpa10-1.png) -->
 
 ### 컬렉션 페치 조인
 
@@ -60,7 +60,7 @@ SELECT T.*, M.* FROM TEAM T INNER JOIN MEMBER M ON T.ID = M.TEAM_ID WHERE T.NAME
 
 - Team은 하나지만 Member가 여럿이면 결과 row가 늘어나 **같은 Team이 중복**된다
 
-![컬렉션 페치 조인](./images/jpa10-2.png)
+<!-- ![컬렉션 페치 조인](./images/jpa10-2.png) -->
 
 ### 페치 조인과 DISTINCT
 
@@ -92,7 +92,7 @@ SELECT T.*, M.* FROM TEAM T INNER JOIN MEMBER M ON T.ID = M.TEAM_ID WHERE T.NAME
 
 ## 다형성 쿼리
 
-![다형성 쿼리](./images/jpa10-3.png)
+<!-- ![다형성 쿼리](./images/jpa10-3.png) -->
 
 ```sql
 -- TYPE: 조회 대상을 특정 자식으로 한정

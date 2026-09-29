@@ -20,7 +20,7 @@ title: JPA 1. 개요
 
 ### 연관관계
 
-![연관관계](./images/jpa01-1.png)
+<!-- ![연관관계](./images/jpa01-1.png) -->
 
 - 테이블은 외래 키를 사용하므로 객체를 테이블에 맞춰 모델링하게 된다
 
@@ -72,7 +72,7 @@ member1 == member2; // false
 
 ## JPA 동작
 
-![JPA 동작](./images/jpa01-2.png)
+<!-- ![JPA 동작](./images/jpa01-2.png) -->
 
 - JPA는 애플리케이션과 JDBC 사이에서 동작
 - JPA가 내부적으로 JDBC API를 사용해 SQL을 호출한다. **개발자가 JDBC API를 직접 사용하지 않는다**
@@ -120,7 +120,7 @@ member1 == member2; // false
 
 ## JPA 구동 방식
 
-![JPA 구동 방식](./images/jpa01-3.png)
+<!-- ![JPA 구동 방식](./images/jpa01-3.png) -->
 
 - `Persistence`가 `persistence.xml` 설정을 읽어 `EntityManagerFactory`를 생성
 - `EntityManagerFactory`에서 필요할 때마다 `EntityManager`를 생성해 사용

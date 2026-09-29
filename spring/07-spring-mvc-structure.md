@@ -12,7 +12,7 @@ title: 스프링 MVC 구조 — 프론트 컨트롤러와 DispatcherServlet
 
 > 컨트롤러에 비즈니스 로직을 둘 수도 있지만 역할이 너무 많아진다. 보통 **서비스 계층**을 따로 두고, 컨트롤러는 서비스를 호출하는 역할만 맡는다.
 
-![MVC 패턴](./images/mvc-pattern.png)
+<!-- ![MVC 패턴](./images/mvc-pattern.png) -->
 
 1. 클라이언트가 요청을 보내면 컨트롤러가 호출된다.
 2. 컨트롤러는 요청을 검증하고 서비스·리포지토리를 호출해 비즈니스 로직을 실행한다.
@@ -23,7 +23,7 @@ title: 스프링 MVC 구조 — 프론트 컨트롤러와 DispatcherServlet
 
 ## 프론트 컨트롤러 패턴
 
-![프론트 컨트롤러 도입 전후](./images/front-controller.png)
+<!-- ![프론트 컨트롤러 도입 전후](./images/front-controller.png) -->
 
 - 프론트 컨트롤러 서블릿 **하나**로 모든 요청을 받는다.
 - 요청에 맞는 컨트롤러를 찾아서 호출한다.
@@ -72,7 +72,7 @@ protected void render(ModelAndView mv, HttpServletRequest request, HttpServletRe
 }
 ```
 
-![스프링 MVC 구조](./images/spring-mvc-structure.png)
+<!-- ![스프링 MVC 구조](./images/spring-mvc-structure.png) -->
 
 | 단계 | 설명 |
 |---|---|

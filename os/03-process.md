@@ -32,7 +32,7 @@ CPU가 특정 프로세스를 수행하는 데 필요한 모든 정보의 집합
 - **Blocked (Wait, Sleep)**: CPU를 할당받더라도 당장 명령어를 수행할 수 없는 상태. I/O 완료, 이벤트 발생 등을 기다림 → 이벤트가 발생하면 Ready로 전환
 - **Terminated**: 실행이 완료되거나 오류로 종료된 상태. 모든 자원을 반납
 
-![프로세스 상태도](./images/process-1.png)
+<!-- ![프로세스 상태도](./images/process-1.png) -->
 
 ## PCB (Process Control Block)
 
@@ -58,7 +58,7 @@ CPU가 특정 프로세스를 수행하는 데 필요한 모든 정보의 집합
 - **Ready Queue**: 메모리에 적재되어 CPU를 기다리는 프로세스의 집합. 단기 스케줄러가 다음 실행할 프로세스를 선택
 - **Device Queue**: 특정 I/O 장치의 처리를 기다리는 프로세스의 집합
 
-![스케줄링 큐](./images/process-2.png)
+<!-- ![스케줄링 큐](./images/process-2.png) -->
 
 ## 스케줄러
 
@@ -78,7 +78,7 @@ CPU가 특정 프로세스를 수행하는 데 필요한 모든 정보의 집합
 - 외부적인 이유(사용자 요청, 운영체제의 필요)로 프로세스의 수행이 잠시 정지된 상태
 - 통째로 디스크로 Swap Out될 수 있고, Resume 요청 시 다시 Swap In되어 Ready로 돌아감
 
-![Suspended 포함 상태도](./images/process-3.png)
+<!-- ![Suspended 포함 상태도](./images/process-3.png) -->
 
 ## 스레드 (Thread, Lightweight Process)
 
@@ -87,8 +87,8 @@ CPU가 특정 프로세스를 수행하는 데 필요한 모든 정보의 집합
 - **스레드별 구성요소**: program counter, register set, stack space
 - **공유 부분**: code section, data section, OS resources
 
-![스레드 구조 1](./images/process-4.png)
-![스레드 구조 2](./images/process-5.png)
+<!-- ![스레드 구조 1](./images/process-4.png) -->
+<!-- ![스레드 구조 2](./images/process-5.png) -->
 
 - heavyweight process: 전통적인 개념으로, 프로세스 하나당 스레드 하나를 가지는 태스크
 - **스레드의 장점**

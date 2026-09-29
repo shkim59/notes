@@ -10,7 +10,7 @@ title: 스프링 컨테이너와 빈 — 싱글톤, 컴포넌트 스캔
 
 ### BeanFactory와 ApplicationContext
 
-![BeanFactory ← ApplicationContext 상속 구조](./images/beanfactory-applicationcontext.png)
+<!-- ![BeanFactory ← ApplicationContext 상속 구조](./images/beanfactory-applicationcontext.png) -->
 
 | | 역할 |
 |---|---|
@@ -30,9 +30,9 @@ ApplicationContext의 부가 기능:
 - XML을 읽든 자바 코드를 읽든 결과는 BeanDefinition이고, 컨테이너는 **BeanDefinition만 알면 된다** (역할과 구현의 분리).
 - `@Bean`, `<bean>` 하나당 메타 정보가 하나씩 생성되고, 컨테이너는 이를 기반으로 빈을 생성한다.
 
-![BeanDefinition 추상화](./images/beandefinition.png)
+<!-- ![BeanDefinition 추상화](./images/beandefinition.png) -->
 
-![BeanDefinition 코드 레벨 구조](./images/beandefinition-code.png)
+<!-- ![BeanDefinition 코드 레벨 구조](./images/beandefinition-code.png) -->
 
 | 속성 | 의미 |
 |---|---|
@@ -47,7 +47,7 @@ ApplicationContext의 부가 기능:
 
 ## 싱글톤
 
-![요청마다 객체를 생성하는 DI 컨테이너](./images/no-singleton.png)
+<!-- ![요청마다 객체를 생성하는 DI 컨테이너](./images/no-singleton.png) -->
 
 - 웹 애플리케이션은 여러 고객이 동시에 요청한다. 초당 100건이면 초당 100개 객체가 생성·소멸 → 메모리 낭비.
 - 객체를 딱 1개만 생성하고 공유하도록 설계하는 것이 **싱글톤 패턴**이다.
@@ -65,7 +65,7 @@ ApplicationContext의 부가 기능:
 - 스프링 컨테이너는 싱글톤 패턴을 적용하지 않아도 객체를 싱글톤으로 관리한다. 이 기능을 **싱글톤 레지스트리**라 한다.
 - 지저분한 패턴 코드 없이, DIP·OCP·테스트·private 생성자 제약에서 자유롭게 싱글톤을 쓸 수 있다.
 
-![스프링 컨테이너의 싱글톤 관리](./images/singleton-container.png)
+<!-- ![스프링 컨테이너의 싱글톤 관리](./images/singleton-container.png) -->
 
 ### 주의: 무상태(stateless)로 설계할 것
 

@@ -66,11 +66,11 @@ title: MySQL 인덱스 Part 1
 - 루트 노드부터 시작해 리프 노드의 시작점을 찾는다. (인덱스 탐색, index seek)
 - 리프 노드의 레코드 순서대로 데이터를 읽는다. (인덱스 스캔, index scan)
 
-![인덱스 레인지 스캔](./images/index1-1.png)
+<!-- ![인덱스 레인지 스캔](./images/index1-1.png) -->
 
 - 인덱스를 이용해 데이터 파일에서 레코드를 읽어온다.
 
-![레코드 읽기](./images/index1-2.png)
+<!-- ![레코드 읽기](./images/index1-2.png) -->
 
 - 커버링 인덱스로 처리되는 쿼리는 디스크의 레코드를 읽지 않아도 된다.
   - 쿼리가 요청하는 컬럼이 인덱스에 모두 포함되어 있어 테이블 접근이 필요 없는 것
@@ -104,7 +104,7 @@ WHERE dept_no BETWEEN 'd002' AND 'd004'
 GROUP BY dept_no;
 ```
 
-![루스 인덱스 스캔](./images/index1-3.png)
+<!-- ![루스 인덱스 스캔](./images/index1-3.png) -->
 
 ### 인덱스 스킵 스캔
 
@@ -123,7 +123,7 @@ SELECT * FROM employees WHERE gender = 'M';
 SELECT * FROM employees WHERE birth_date >= '1965-02-01';
 ```
 
-![인덱스 스킵 스캔](./images/index1-4.png)
+<!-- ![인덱스 스킵 스캔](./images/index1-4.png) -->
 
 ```sql
 -- 스킵 스캔은 내부적으로 아래처럼 동작
