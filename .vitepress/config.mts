@@ -59,6 +59,7 @@ export default defineConfig({
   description: '공부하고 정리한 개발 노트',
   themeConfig: {
     sidebar: buildSidebar(),
+    nav: [{ text: '노트', link: '/java/01-java-versions', activeMatch: '^/(?!$)' }],
     search: { provider: 'local' },
     outline: { label: '목차' },
     docFooter: { prev: '이전 글', next: '다음 글' },
