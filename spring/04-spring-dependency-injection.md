@@ -242,8 +242,6 @@ discountService.discount(member, 20000, "rateDiscountPolicy"); // 2000
 - `List<DiscountPolicy>`: 해당 타입의 모든 빈. 없으면 빈 컬렉션 주입
 - `new AnnotationConfigApplicationContext(클래스...)`에 넘긴 클래스는 자동으로 빈 등록된다.
 
-> 실무 적용 사례: [전략 패턴으로 댓글 알림 분기 처리하기](../troubleshooting/02-strategy-pattern-comment-alarm.md)
-
 ## 자동 vs 수동 — 실무 운영 기준
 
 **기본은 자동.** 스프링은 `@Controller`, `@Service`, `@Repository`처럼 계층별 자동 스캔을 지원하고, 스프링 부트도 컴포넌트 스캔이 기본이다. `@Configuration`에 일일이 `@Bean`을 적는 건 번거롭고, 설정 정보가 커지면 관리 자체가 부담이다. 그리고 **자동 등록으로도 OCP, DIP를 지킬 수 있다.**
