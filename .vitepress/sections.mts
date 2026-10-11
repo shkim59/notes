@@ -87,11 +87,11 @@ export const sections: Section[] = [
     ],
   },
   {
-    label: '면접 · 기록',
-    groups: [
-      { dir: 'interview', text: '면접 대비' },
-      { dir: 'troubleshooting', text: '트러블슈팅' },
-      { dir: 'archive', text: '아카이브' },
-    ],
+    label: '트러블슈팅',
+    groups: [{ dir: 'troubleshooting', text: '트러블슈팅' }],
+  },
+  {
+    label: '메모',
+    groups: [{ dir: 'archive', text: '메모' }],
   },
 ]
